@@ -1,0 +1,79 @@
+.log {
+    height: 10;
+    width: 100%;
+    max-width: 100;
+    scrollbar-size: 1 1;
+    overflow: auto auto;
+    padding-left: 2;
+}
+.buttons {
+    padding: 0;
+    margin: 0;
+    border: none;
+    background: transparent;
+    color: gray;
+    border: round gray;
+
+    &:focus {
+
+        text-style: bold;
+        color: white;
+        border: round white;
+    }
+
+    &:hover {
+        text-style: bold;
+        color: white;   
+        border: round white;
+    }
+}
+
+.collapsible CollapsibleTitle {
+    text-style: bold;
+    color: gray;
+
+    &:focus {
+
+        text-style: bold underline;
+        color: white;
+        background: transparent;
+
+    }
+
+    &:hover {
+
+        text-style: bold underline;
+        color: white;
+        background: transparent;
+
+    }
+}
+
+.behavior-title,
+.timeout-title,
+.checker-title {
+    margin-top: 1;
+    text-style: bold;
+}
+
+.behavior,
+.timeout,
+.checker-result {
+    margin-bottom: 1;
+    color: gray;
+}
+
+.success,
+.collapsible CollapsibleTitle.success {
+    color: green;
+}
+
+.fail,
+.collapsible CollapsibleTitle.fail {
+    color: red;
+}
+
+.pending,
+.collapsible CollapsibleTitle.pending {
+    color: orange;
+}
